@@ -73,10 +73,6 @@
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
-        setTimeout(() => {
-          SocialLogin = window.BiconomySocialLogin;
-          console.log("Biconomy integrated successfully");
-        }, 1000);
         createUnityInstance(canvas, config, (progress) => {
           progressBarFull.style.width = 100 * progress + "%";
         })
